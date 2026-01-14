@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600&display=swap');
 
 /* ===============================
-   THEME VARIABLES (SOFT DARK)
-   ⚠️ ONLY THIS PART IS CHANGED
+   THEME VARIABLES (PINKISH WHITE)
+   ⚠️ ONLY COLORS CHANGED
 ================================ */
 :root {
-    --bg-main: #14161a;          /* Soft charcoal */
-    --bg-alt: #1b1e24;           /* Section separation */
-    --accent-rose: #c9a26d;      /* Warm gold accent */
-    --accent-dark: #9e7a4f;      /* Dark gold */
-    --text-main: #e6e7e9;        /* Soft white */
-    --text-muted: #a1a6ad;       /* Muted grey */
+    --bg-main: #fdf6f8;          /* Soft pinkish white */
+    --bg-alt: #ffffff;           /* Pure white sections */
+    --accent-rose: #d9a1b3;      /* Dusty soft pink */
+    --accent-dark: #b77a90;      /* Deeper rose for hover */
+    --text-main: #2f2a2c;        /* Soft charcoal */
+    --text-muted: #7a6f73;       /* Muted warm grey */
     --spacing: 24px;
     --transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -47,9 +47,9 @@ body {
     width: 100%;
     z-index: 1000;
     padding: 30px 0;
-    background: rgba(20, 22, 26, 0.85);
+    background: rgba(255, 246, 249, 0.9);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(201, 162, 109, 0.15);
+    border-bottom: 1px solid rgba(217, 161, 179, 0.25);
 }
 
 .logo {
@@ -59,7 +59,7 @@ body {
     color: var(--text-main);
     text-decoration: none;
     letter-spacing: 2px;
-   
+    text-transform: lowercase;
 }
 
 .logo span {
@@ -92,8 +92,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--bg-main);
-    background: radial-gradient(circle at center, #1f2229 0%, #14161a 100%);
+    background: radial-gradient(
+        circle at center,
+        #ffffff 0%,
+        #fdf6f8 100%
+    );
     text-align: center;
 }
 
@@ -118,19 +121,19 @@ body {
 .btn {
     display: inline-block;
     padding: 16px 45px;
-    background: var(--accent-rose);
-    color: #14161a;
+    background: var(--text-main);
+    color: #ffffff;
     text-decoration: none;
     transition: var(--transition);
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 0.75rem;
-    border: 1px solid var(--accent-rose);
+    border: 1px solid var(--text-main);
 }
 
 .btn:hover {
     background: transparent;
-    color: var(--accent-rose);
+    color: var(--text-main);
     transform: translateY(-3px);
 }
 
@@ -160,7 +163,7 @@ body {
 }
 
 .placeholder-img {
-    box-shadow: 30px 30px 0px rgba(201, 162, 109, 0.15);
+    box-shadow: 30px 30px 0px rgba(217, 161, 179, 0.2);
     border-radius: 4px;
     overflow: hidden;
 }
@@ -179,7 +182,7 @@ body {
 .gallery-item {
     position: relative;
     overflow: hidden;
-    background: #22252c;
+    background: #f2e9ec;
     aspect-ratio: 4 / 5;
 }
 
@@ -198,7 +201,7 @@ body {
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.35);
+    background: rgba(217, 161, 179, 0.35);
     opacity: 0;
     z-index: 1;
     transition: var(--transition);
