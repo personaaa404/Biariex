@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BIARIEX | Professional Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container nav-content">
+        <a href="#" class="logo">BIARIEX</a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <span class="subtitle">B I A R I E X</span>
+        <h1>Pretty Lady with Pretty Feets</h1>
+        <p>Good Voice Hands & Feets</p>
+        <a href="#gallery" class="btn">View Feets</a>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container about-grid">
+        <div class="about-text">
+          <h2 class="section-title">The Artist</h2>
+          <p>
+          BIARIEX is a lady of natural charm, blessed with a captivating voice and graceful presence.
+Her beautiful hands and perfectly shaped feet reflect her attention to detail and elegance.
+She carries herself with confidence, warmth, and effortless beauty.
+What truly sets her apart is her genuine nature — calm, classy, and completely free of attitude.
+A perfect blend of softness, confidence, and timeless allure.
+          </p>
+        </div>
+        <div class="about-image-box">
+          <div class="placeholder-img">
+            <img
+              src="assets/image13.jpg"
+              alt="Model Portrait Updates"
+              style="width: 100%; height: 100%; object-fit: cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+      <div class="container">
+        <h2 class="section-title center">The Collection</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img
+              src="assets/Image6.jpg"
+              alt="Editorial"
+              onclick="openModal(this.src)"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="assets/Image7.jpg"
+              alt="Editorial"
+              onclick="openModal(this.src)"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="assets/Image8.jpg"
+              alt="Editorial"
+              onclick="openModal(this.src)"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="assets/Image9.jpg"
+              alt="Editorial"
+              onclick="openModal(this.src)"
+            />
+           </div>
+          <div class="gallery-item">
+            <img
+              src="assets/Image10.jpg"
+              alt="Editorial"
+              onclick="openModal(this.src)"
+            />
+          </div>
+          <div class="gallery-item">
+            <img
+              src="assets/Image11.jpg"
+              alt="Editorial"
+              onclick="openModal(this.src)"
+            />
+          </div> 
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container center">
+        <h2 class="section-title center">All Rights Reserved </h2>
+       
+        
+      </div>
+    </section>
+
+    <div id="modal" class="modal" onclick="closeModal()">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modal-img" />
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
